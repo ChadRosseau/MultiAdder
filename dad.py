@@ -13,12 +13,12 @@ def printResults():
 while True:
     value = input("Please input your category and hours: ")
     if "results" in value.lower(): 
-        ()
+        printResults()
         continue
     try:
         split = value.split(" ")
         cat = int(split[0])
-        hour = 2 + float(split[1])
+        hour = float(split[1])
     except:
         print("Invalid command, please try again")
         continue
